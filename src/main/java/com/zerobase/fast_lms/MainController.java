@@ -20,19 +20,17 @@ public class MainController { // Controller가 들어가는 클래스 이름은 
 
 	private final MailComponents mailComponents;
 
-	public MainController(MailComponents mailComponents) {
-		this.mailComponents = mailComponents;
-	}
 
 	@RequestMapping("/")
 	public String index() {
-		
-		String email = "jerryseo0306@gmail.com";
-		String subject = "Hey this is Jeremy from Korea";
-		String text = "<p>hi.</p><p>glad to meet you</p>";
-		
-		mailComponents.sendMail(email, subject, text);
 
+		/*
+		  String email = "jerryseo0306@gmail.com"; String subject =
+		  "Hey this is Jeremy from Korea"; String text =
+		  "<p>hi.</p><p>glad to meet you</p>";
+		  
+		  mailComponents.sendMail(email, subject, text);
+		 */
 		return "index";
 
 	}

@@ -19,6 +19,7 @@ public class MemberInput {
 	public String toString() {
 		return String.format("userId: %s userName: %s password: %s phone: %s", getUserId(), getUserName(), getPassword(), getPhone());
 	}
+
 	//getter setter
 	public String getUserId() {
 		return userId;
@@ -46,4 +47,3 @@ public class MemberInput {
 	}
 	
 }
-

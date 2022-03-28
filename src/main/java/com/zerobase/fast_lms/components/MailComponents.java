@@ -16,10 +16,6 @@ public class MailComponents {
 
 	private final JavaMailSender javaMailSender;
 
-	public MailComponents(JavaMailSender javaMailSender) {
-		this.javaMailSender = javaMailSender;
-	}
-
 	public void sendMailTest() {
 
 		SimpleMailMessage msg = new SimpleMailMessage();

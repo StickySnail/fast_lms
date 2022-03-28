@@ -19,9 +19,6 @@ public class MemberController {
 
 	private final MemberService memberService;
 	
-	public MemberController(MemberService memberService) {
-		this.memberService = memberService;
-	}
 	
 	// @RequestMapping(value = "/member/register", method = RequestMethod.GET)
 	@GetMapping("/member/register")
