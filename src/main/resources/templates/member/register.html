@@ -10,7 +10,7 @@
 
 	<form method="post"> <!-- form태그로 감싸져 있으면 서버로 보냄 -->
 		<div>
-			<input type="email" name="userId" placeholder = "아이디(이메일)입력"/>
+			<input type="email" name="userId" placeholder = "아이디(이메일)입력" required/>
 		</div>
 		<div>
 			<input type="text" name="userName" placeholder = "이름 입력" required/>
@@ -25,7 +25,7 @@
 			<input type="tel" name="phone" placeholder="전화번호 입력" required />
 		</div>
 		<div>
-			<button>회원 가입</button>
+			<button type="submit">회원 가입</button>
 		</div>
 	</form>
 </body>

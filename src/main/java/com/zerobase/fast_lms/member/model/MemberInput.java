@@ -19,31 +19,4 @@ public class MemberInput {
 	public String toString() {
 		return String.format("userId: %s userName: %s password: %s phone: %s", getUserId(), getUserName(), getPassword(), getPhone());
 	}
-
-	//getter setter
-	public String getUserId() {
-		return userId;
-	}
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public String getPhone() {
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	
 }

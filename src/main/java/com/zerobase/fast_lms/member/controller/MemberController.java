@@ -18,6 +18,7 @@ public class MemberController {
 
 
 	private final MemberService memberService;
+
 	
 	
 	// @RequestMapping(value = "/member/register", method = RequestMethod.GET)
@@ -30,14 +31,14 @@ public class MemberController {
 
 	// @RequestMapping(value = "member/register", method = RequestMethod.POST)
 	@PostMapping("/member/register")
-	public String registerSubmit(Model model,  HttpServletRequest request,
-			MemberInput parameter) {
+	public String registerSubmit(Model model, HttpServletRequest request
+			, MemberInput parameter) {
 
-		
 		boolean result = memberService.register(parameter);
 		model.addAttribute("result", result);
 
-		
+		parameter.toString();
+
 		return "member/register_c";
 	}
 	
@@ -61,6 +62,10 @@ public class MemberController {
 		return "member/email_auth";
 	}
 	
+	@GetMapping("/member/info")
+	public String memberInfo() {
+		return "member/info";
+	}
 	
 
 }
