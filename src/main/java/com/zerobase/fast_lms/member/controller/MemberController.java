@@ -41,8 +41,7 @@ public class MemberController {
 
 		return "member/register_c";
 	}
-	
-	// <정보>
+		// <정보>
 	// http://www.naver.com/news/list.do?id=123
 	// ex) http://~ :80/news/~ 80포트임 ( 웹포트의 디폴트라 생략 가능)
 	// ex) https://~ :443/ 443포트 (https의 디폴트)
